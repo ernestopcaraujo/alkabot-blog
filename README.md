@@ -30,7 +30,7 @@ Para executar localmente basta clonar ou fazer um fork deste repositório para u
 Abra esta pasta com sua IDE e pela linha de comando navegue até o diretório alkabot-blog/alkabot-blog.
 Execute o comando `ng serve -o` neste local. A aplicação deverá ser executada no endereço `http://localhost:4200`.
 
-Também é possivel executar a aplicação pela internet através da URL [AlkabotBlog](https://alkabot-blog.vercel.app/).
+Também é possivel executar a aplicação pela internet através da URL [https://alkabot-blog.vercel.app/](https://alkabot-blog.vercel.app/).
 
 
 **Utilização**

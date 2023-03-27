@@ -1,0 +1,66 @@
+.blogTitle{
+  font-weight: bold;
+}
+
+.sideMenu{
+  font-weight: bold;
+  font-size:x-large;
+}
+
+.content{
+  padding-right: 300px;
+  padding-left: 300px;
+  padding-top: 75px;
+}
+
+.box{
+  padding: 10px;
+  border: 2px solid rebeccapurple ;
+  border-radius: 2px;
+  margin: 10px;
+}
+
+.authorPost{
+  font-weight: bold;
+  color:blueviolet;
+}
+
+.dataPost{
+  font-size: smaller;
+}
+
+.titlePost{
+  font-weight: bold;
+}
+
+.bodyPost{
+  font-style: italic;
+}
+
+.sectionCommentTitle{
+  color: blue;
+}
+
+.titleComment{
+  font-weight: bold;
+}
+
+.dataComment{
+  font-size: smaller;
+}
+
+.bodyComment{
+  color: blue;
+}
+
+.emailComment{
+  color: grey;
+  font-size: small;
+}
+
+.menuTop{
+  text-align: start;
+  margin-top: 20px;
+  margin-left: 10px;
+  margin-bottom: 0px
+}

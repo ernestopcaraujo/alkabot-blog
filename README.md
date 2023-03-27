@@ -15,7 +15,7 @@ Linguagens de Programação: TypeScript e Javascript
 Estilização: CSS
 Biblioteca de Estilos: Bootstrap
 
-**Instalação**
+**Instalação e Inicialização (local e via Internet)**
 
 Para instalar os arquivos necessários para executar a aplicação, seguir os passos de instalação do
 AngularCLI, conforme o link abaixo, em sua IDE. Originalmente a aplicação foi desenvolvida usando o
@@ -25,6 +25,10 @@ Visual Studio Code.
 
 A biblioteca Bootstrap não precisa ser instalada pois ela é acessada pela página index.html através
 dos links CDN já pré-inseridos no código da página.
+
+Para executar localmente basta clonar ou fazer um fork deste repositório para uma pasta local.
+Abra esta pasta com sua IDE e pela linha de comando navegue até o diretório alkabot-blog/alkabot-blog.
+Execute o comando `ng serve -o` neste local. A aplicação deverá ser executada no endereço 
 
 **Utilização**
 

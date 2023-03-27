@@ -10,9 +10,13 @@ para que o usuário possa concentrar-se na leitura do texto dos posts.
 **Recursos Utilizados**
 
 Framework de desenvolvimento: Angular 14
+
 Linguagem de Marcação: HTML
+
 Linguagens de Programação: TypeScript e Javascript
+
 Estilização: CSS
+
 Biblioteca de Estilos: Bootstrap
 
 **Instalação e Inicialização (local e via Internet)**
@@ -28,7 +32,8 @@ dos links CDN já pré-inseridos no código da página.
 
 Para executar localmente basta clonar ou fazer um fork deste repositório para uma pasta local.
 Abra esta pasta com sua IDE e pela linha de comando navegue até o diretório alkabot-blog/alkabot-blog.
-Execute o comando `ng serve -o` neste local. A aplicação deverá ser executada no endereço `http://localhost:4200`.
+Execute o comando 
+`ng serve -o` neste local. A aplicação deverá ser executada no endereço `http://localhost:4200`.
 
 Também é possivel executar a aplicação pela internet através da URL [https://alkabot-blog.vercel.app/](https://alkabot-blog.vercel.app/).
 

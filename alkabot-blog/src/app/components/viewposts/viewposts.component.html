@@ -1,0 +1,58 @@
+<div class="content">
+
+  <div class="menuTop">
+      <!-- OffCanvas trigger button -->
+      <h1 class="blogTitle">AlkaBlog</h1><button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+        Menu do AlkaBlog
+      </button>
+  </div>
+  <div *ngFor="let userPost of userPosts">
+    <div class="box">
+      <p><span class="authorPost" style="font-weight: bold;">{{userPost.name}}</span> [Autor] <br><span class="dataPost">Post: {{userPost.id}} </span><span class="dataPost">| Usuário: {{userPost.userId}}</span></p>
+      <h6 class="titlePost">{{changeChar(userPost.title)}}</h6>
+      <p class="bodyPost">{{changeChar(userPost.body)}}.</p>
+
+      <!-- Button trigger modal -->
+      <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" (click)="getPostComments(userPost.id)">
+        Comentários
+      </button>
+
+      <!-- Modal -->
+      <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5 sectionCommentTitle" id="exampleModalLabel">Comentários</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body"*ngFor="let comment of comments">
+              <p class="titleComment">{{changeChar(comment.name)}}<br></p>
+              <p><span class="dataComment">Comentário do Post: {{comment.postId}}  |</span><span class="dataComment"> Id do Comentário: {{comment.id}}</span></p>
+              <p class="bodyComment">{{changeChar(comment.body)}}.</p>
+              <span class="emailComment">Meu email: {{comment.email}}</span>
+              <hr>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Fechar Comentários</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- OffCanvas Settings -->
+  <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+    <div class="offcanvas-header">
+      <h5 class="offcanvas-title sideMenu" id="offcanvasExampleLabel">Menu do AlkaBlog</h5>
+      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+      <div>
+        Serviços e opções para o usuário do AlkaBlog
+      </div>
+      <div class="dropdown mt-3">
+        <button class="btn btn-primary">Cadastro de Usuário</button>
+      </div>
+    </div>
+  </div>
+</div>
